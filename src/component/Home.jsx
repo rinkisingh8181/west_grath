@@ -1,10 +1,19 @@
 import React from "react";
+import {
+    BrowserRouter as Router,
+} from "react-router-dom";
+import Header from "./Header/Header";
+import Body from "./MainComponent/Body"
+
 
 const Home = () => {
     return (
-        <div className="test">
-        <h2>Home</h2>
-        </div>
+        <Router>
+                <div>
+                    <Header/>
+                    <Body/>
+                </div>
+        </Router>
     )
 };
 
