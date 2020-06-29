@@ -6,10 +6,9 @@
   label {
     font-family: Josefin Sans;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 14px;
-    text-transform: uppercase;
-    color: #6E6D69;
+    font-size: 15px;
+    line-height: 15px;
+    color: #000000;
     margin-bottom: 0;
     margin-right: 10px;
   }
@@ -18,10 +17,8 @@
     display: flex;
     flex-direction: column;
     background: #FFFFFF;
-    border: 1px solid rgba(182, 165, 118, 0.2);
-    box-sizing: border-box;
-    box-shadow: 10px 10px 15px rgba(182, 165, 118, 0.1);
-    border-radius: 25px;
+    border: 1px solid #c4c4c4;
+    border-radius: 0;
     min-width: 150px;
     .custom-select__trigger {
       position: relative;
@@ -32,7 +29,8 @@
       font-family: Josefin Sans;
       font-weight: normal;
       font-size: 14px;
-      line-height: 14px;color: #6E6D69;
+      line-height: 14px;
+      color: #000000;
       cursor: pointer;
       .arrow {
         position: relative;
@@ -47,7 +45,7 @@
           transition: all 0.5s;
           border-left: 6px solid transparent;
           border-right: 6px solid transparent;
-          border-top: 6px solid #B6A576;
+          border-top: 6px solid #000000;
         }
       }
     }
@@ -86,7 +84,6 @@
         font-weight: bold;
         font-size: 14px;
         line-height: 18px;
-        text-transform: uppercase;
         color: #6E6D69;
         cursor: pointer;
         transition: all 0.5s;
@@ -110,8 +107,12 @@
   }
   .wine-colloection-block {
     .wine-colloection-card {
+      box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1), 0px 4px 4px rgba(0, 0, 0, 0.15);
+      @media screen and (max-width: 991px){
+        box-shadow: none;
+      }
       .wine-colloection-head {
-        padding: 28px 22px;
+        padding: 35px 35px 8px;
         background-color: #ffffff;
         @media screen and (max-width: 991px){
           background-color: transparent;
@@ -121,13 +122,6 @@
           padding-top: 26px;
         }
         .wine-colloection-title {
-          flex: 1 225px;
-          max-width: 225px;
-          @media screen and (max-width: 991px){
-            flex: 1 100%;
-            max-width: 100%;
-            margin-bottom: 8px;
-          }
           h4 {
             font-family: Josefin Sans;
             font-weight: normal;
@@ -149,11 +143,9 @@
             flex: 1;
             .search-input {
               background: #FFFFFF;
-              border: 1px solid rgba(182, 165, 118, 0.2);
-              box-sizing: border-box;
-              box-shadow: 10px 10px 15px rgba(182, 165, 118, 0.1);
-              border-radius: 25px;
-              padding: 7px 18px;
+              border: 1px solid #c4c4c4;
+              border-radius: 0;
+              padding: 7px 14px;
               font-family: Roboto;
               font-weight: normal;
               font-size: 14px;
@@ -222,6 +214,11 @@
       }
       .wine-colloection-table-wrapper {
         background-color: #ffffff;
+        padding-left: 35px;
+        padding-right: 35px;
+        @media screen and (max-width: 991px){
+          box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1), 0px 4px 4px rgba(0, 0, 0, 0.15);
+        }
       }
       .wine-colloection-table {
         .table {
@@ -229,16 +226,58 @@
           th {
             font-family: Josefin Sans;
             font-weight: normal;
-            font-size: 14px;
+            font-size: 13px;
             line-height: 14px;
+            font-weight: 600;
             color: #000000;
-            text-transform: uppercase;
-            padding: 15px 27px 12px;
+            text-transform: capitalize;
+            padding: 15px 22px 12px;
             border-top: 1px solid #e7e7e7;
             border-bottom: 1px solid #e7e7e7;
             vertical-align: middle;
             &.status-th {
               text-align: center;
+            }
+            &:first-child {
+              padding-left: 0;
+            }
+            &:last-child {
+              padding-right: 0;
+            }
+            .table-th-sort {
+              display: flex;
+              align-items: center;
+              cursor: pointer;
+            }
+            .table-sort {
+              width: 20px;
+              display: inline-block;
+              vertical-align: middle;
+              margin-left: 10px;
+              .sort-up {
+                display: block;
+                width: 0;
+                height: 0;
+                border-left: 8px solid transparent;
+                border-right: 8px solid transparent;
+                border-bottom: 8px solid #c4c4c4;
+                margin: 4px;
+                &.active {
+                  border-bottom: 8px solid #B6A576;
+                }
+              }
+              .sort-down {
+                display: block;
+                width: 0;
+                height: 0;
+                border-left: 8px solid transparent;
+                border-right: 8px solid transparent;
+                border-top: 8px solid #c4c4c4;
+                margin: 4px;
+                &.active {
+                  border-top: 8px solid #B6A576;
+                }
+              }
             }
           }
           td {
@@ -248,16 +287,22 @@
             font-size: 14px;
             line-height: 14px;
             color: #6C6B6B;
-            padding: 16px 27px;
+            padding: 16px 22px;
             border-bottom: 1px solid #e7e7e7;
             vertical-align: middle;
+            &:first-child {
+              padding-left: 0;
+            }
+            &:last-child {
+              padding-right: 0;
+            }
             .wine-list {
               .wine-name {
                 color: #B6A576;
+                text-decoration: underline;
               }
             }
             .status-list {
-              text-align: center;
               &.live-offer {
                 span {
                   font-family: Roboto;
@@ -332,6 +377,19 @@
         }
         .wine-table-footer-next {
           .wine-table-prev-next-btn {
+            font-family: Josefin Sans;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 14px;
+            color: #B16D06;
+            &:hover {
+              text-decoration: none;
+              color: #6E6D69;
+            }
+          }
+        }
+        .win-table-export {
+          .export-btn {
             font-family: Josefin Sans;
             font-weight: normal;
             font-size: 14px;

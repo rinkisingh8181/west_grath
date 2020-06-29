@@ -7,7 +7,7 @@ import './index.scss';
 const Invoice = () => {
     return (
         <div className="invoice-section">
-          <Container fluid>
+          <Container>
               <div className="invoice-block">
                   <div className="invoice-card">
                       <div className="title">
@@ -17,107 +17,71 @@ const Invoice = () => {
                           <Table responsive>
                               <thead>
                                   <tr>
-                                      <th width="18%">date</th>
-                                      <th width="10%">order</th>
-                                      <th width="33%">wine</th>
-                                      <th width="4%">QTY</th>
-                                      <th width="10%">Price</th>
-                                      <th width="8%">RECEIPT</th>
-                                      <th width="8%">INVOICE</th>
-                                      <th width="10%">DELIVERY</th>
+                                      <th width="16%">PURCHASE DATE</th>
+                                      <th width="10%">INVOICE</th>
+                                      <th width="31%">wine</th>
+                                      <th width="5%">Year</th>
+                                      <th width="5%">Size</th>
+                                      <th width="16%">PURCHASE PRICE</th>
+                                      <th width="22%">DOWNLOAD INVOICE</th>
                                   </tr>
                               </thead>
                               <tbody>
                                   <tr>
-                                      <td>dd mmm yyyy</td>
-                                      <td>#56425</td>
+                                      <td>13/02/2020</td>
+                                      <td><span className="d-block text-left receipt-link">07949</span></td>
                                       <td>
-                                          <div className="invoice-wine-list">
-                                              <span className="d-block text-nowrap">Wine Name, Region</span>
-                                              <span className="d-block text-nowrap">Vintage, Format</span>
-                                          </div>
-                                          <div className="invoice-wine-list">
-                                              <span className="d-block">Wine Name, Region</span>
-                                              <span className="d-block">Vintage, Format</span>
-                                          </div>
-                                          <div className="invoice-wine-list">
-                                              <span className="d-block">Wine Name, Region</span>
-                                              <span className="d-block">Vintage, Format</span>
-                                          </div>
+                                          Screaming Eagle, Cabernet Sauvignon
                                       </td>
-                                      <td>
-                                          <div className="invoice-wine-list text-center">
-                                              <span>3</span>
-                                          </div>
-                                          <div className="invoice-wine-list text-center">
-                                              <span>3</span>
-                                          </div>
-                                          <div className="invoice-wine-list text-center">
-                                              <span>6</span>
-                                          </div>
-                                      </td>
-                                      <td>
-                                          <div className="invoice-wine-list text-center">
-                                              <span>$47,010</span>
-                                          </div>
-                                          <div className="invoice-wine-list text-center">
-                                              <span>$7500</span>
-                                          </div>
-                                          <div className="invoice-wine-list text-center">
-                                              <span>$1500</span>
-                                          </div>
-                                      </td>
+                                      <td>2016</td>
+                                      <td>3x75</td>
+                                      <td>47,010</td>
                                       <td><span className="d-block text-center receipt-link">PDF</span></td>
-                                      <td><span className="d-block text-center receipt-link">PDF</span></td>
-                                      <td><span className="d-block text-center receipt-link">PENDING</span></td>
                                   </tr>
                                   <tr>
-                                      <td>dd mmm yyyy</td>
-                                      <td>#56425</td>
+                                      <td>13/02/2020</td>
+                                      <td><span className="d-block text-left receipt-link">07949</span></td>
                                       <td>
-                                          <div className="invoice-wine-list">
-                                              <span className="d-block">Wine Name, Region</span>
-                                              <span className="d-block">Vintage, Format</span>
-                                          </div>
+                                          Screaming Eagle, Cabernet Sauvignon
                                       </td>
-                                      <td>
-                                          <div className="invoice-wine-list text-center">
-                                              <span>3</span>
-                                          </div>
-                                      </td>
-                                      <td>
-                                          <div className="invoice-wine-list text-center">
-                                              <span>$47,010</span>
-                                          </div>
-                                      </td>
+                                      <td>2016</td>
+                                      <td>3x75</td>
+                                      <td>47,010</td>
                                       <td><span className="d-block text-center receipt-link">PDF</span></td>
-                                      <td><span className="d-block text-center receipt-link">PDF</span></td>
-                                      <td><span className="d-block text-center receipt-link">PENDING</span></td>
                                   </tr>
                                   <tr>
-                                      <td>dd mmm yyyy</td>
-                                      <td>#56425</td>
+                                      <td>13/02/2020</td>
+                                      <td><span className="d-block text-left receipt-link">07949</span></td>
                                       <td>
-                                          <div className="invoice-wine-list">
-                                              <span className="d-block">Wine Name, Region</span>
-                                              <span className="d-block">Vintage, Format</span>
-                                          </div>
+                                          Screaming Eagle, Cabernet Sauvignon
                                       </td>
-                                      <td>
-                                          <div className="invoice-wine-list text-center">
-                                              <span>3</span>
-                                          </div>
-                                      </td>
-                                      <td>
-                                          <div className="invoice-wine-list text-center">
-                                              <span>$47,010</span>
-                                          </div>
-                                      </td>
+                                      <td>2016</td>
+                                      <td>3x75</td>
+                                      <td>47,010</td>
                                       <td><span className="d-block text-center receipt-link">PDF</span></td>
-                                      <td><span className="d-block text-center receipt-link">PDF</span></td>
-                                      <td><span className="d-block text-center receipt-link">PENDING</span></td>
                                   </tr>
-
+                                  <tr>
+                                      <td>DD/MM/YYYY</td>
+                                      <td><span className="d-block text-left receipt-link">07949</span></td>
+                                      <td>
+                                          Screaming Eagle, Cabernet Sauvignon
+                                      </td>
+                                      <td>2016</td>
+                                      <td>3x75</td>
+                                      <td>47,010</td>
+                                      <td><span className="d-block text-center receipt-link">PDF</span></td>
+                                  </tr>
+                                  <tr>
+                                      <td>DD/MM/YYYY</td>
+                                      <td><span className="d-block text-left receipt-link">07949</span></td>
+                                      <td>
+                                          Screaming Eagle, Cabernet Sauvignon
+                                      </td>
+                                      <td>2016</td>
+                                      <td>3x75</td>
+                                      <td>47,010</td>
+                                      <td><span className="d-block text-center receipt-link">PDF</span></td>
+                                  </tr>
                               </tbody>
                           </Table>
                       </div>

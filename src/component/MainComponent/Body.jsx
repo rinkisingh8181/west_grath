@@ -7,6 +7,7 @@ import {
 import AccountStorageComponent  from "./AccountStorageComponent/AccountStorageComponent";
 import InvoiceComponent  from "./InvoiceComponent/InvoiceComponent";
 import WineColloection from './WineColloectionComponent/WineColloectionComponent';
+import ProductPage from './ProductPageComponent/ProductPageComponent';
 
 const Home = () => {
     return (
@@ -22,6 +23,9 @@ const Home = () => {
                 </Route>
                 <Route path="/wine">
                     <WineColloection/>
+                </Route>
+                <Route path="/product">
+                    <ProductPage/>
                 </Route>
             </Switch>
 

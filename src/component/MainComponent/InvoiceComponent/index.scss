@@ -6,12 +6,13 @@
   .invoice-block {
     .invoice-card {
       background-color: #FFFFFF;
-      padding: 35px;
+      padding: 35px 35px 14px;
+      box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1), 0px 4px 4px rgba(0, 0, 0, 0.15);
       @media screen and (max-width: 767px){
         padding: 19px;
       }
       .title {
-        padding: 0 0 30px;
+        padding: 0 0 26px;
         @media screen and (max-width: 767px){
           padding-bottom: 19px;
         }
@@ -33,46 +34,54 @@
             th {
               font-family: Josefin Sans;
               font-weight: bold;
-              font-size: 15px;
-              line-height: 15px;
+              font-size: 14px;
+              line-height: 14px;
               text-transform: uppercase;
-              color: #6C6B6B;
-              border-top: 1px solid #e7e7e7;
-              border-bottom: 1px solid #e7e7e7;
-              padding: 13px 26px 11px;
+              color: #000000;
+              border-top: 1px solid #d7d7d7;
+              border-bottom: 1px solid #d7d7d7;
+              padding: 13px 14px 11px;
+              vertical-align: middle;
+              &:first-child {
+                padding-left: 0;
+              }
+              &:last-child {
+                padding-right: 0;
+              }
             }
             td {
               font-family: Josefin Sans;
               font-weight: normal;
               font-size: 14px;
               line-height: 14px;
-              color: #6C6B6B;
-              border-bottom: 1px solid #e7e7e7;
-              padding: 32px 26px;
-              .receipt-link {
-                color: #B6A576;
-                text-transform: uppercase;
+              color: #6e6d69;
+              border-bottom: 1px solid #d7d7d7;
+              padding: 14px;
+              vertical-align: middle;
+              &:first-child {
+                padding-left: 0;
               }
-              .invoice-wine-list {
-                margin-top: 24px;
-                min-height: 30px;
-                &:first-child {
-                  margin-top: 0;
-                }
+              &:last-child {
+                padding-right: 0;
+              }
+              .receipt-link {
+                color: #b6a576;
+                text-transform: uppercase;
+                text-decoration: underline;
               }
             }
           }
         }
       }
       .invoice-footer {
-        padding-top: 30px;
+        padding-top: 24px;
         .invoice-xls-view {
           .invoice-xls-view-btn {
             font-family: Josefin Sans;
             font-weight: bold;
-            font-size: 16px;
-            line-height: 16px;
-            color: #B6A576;
+            font-size: 14px;
+            line-height: 14px;
+            color: #b6a576;
             &:hover {
               text-decoration: none;
               color: #6E6D69;

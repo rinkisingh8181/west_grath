@@ -14,13 +14,13 @@ const Header = () => {
     return (
     <>
         <header className="header">
-            <Container fluid>
-                <Navbar  expand="lg">
+            <Container>
+                <Navbar  expand="lg" className="flex-column align-items-center">
                     <Navbar.Brand href="#home">
                         <img src={logo} alt="Logo" />
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbar-nav" className="top-toggle-menu" />
-                    <Navbar.Collapse id="navbar-nav" className="header-nav ml-lg-4 ml-xl-5">
+                    <Navbar.Collapse id="navbar-nav" className="header-nav mt-3 mb-0">
                         <Nav className="ml-auto">
                             <Nav.Link className="close-icon">
                                 <Navbar.Toggle aria-controls="basic-navbar-nav">
@@ -29,7 +29,8 @@ const Header = () => {
                             </Nav.Link>
                             <Nav.Link>Dashboard</Nav.Link>
                             <Navbar.Toggle aria-controls="basic-navbar-nav"><NavLink key={1} to="/account" className="nav-link">Account Information </NavLink></Navbar.Toggle>
-                            <Navbar.Toggle aria-controls="basic-navbar-nav"><NavLink key={1} to="/wine" className="nav-link">Wine collection </NavLink></Navbar.Toggle>
+                            <Navbar.Toggle aria-controls="basic-navbar-nav"><NavLink key={1} to="/wine" className="nav-link">collection</NavLink></Navbar.Toggle>
+                            <Navbar.Toggle aria-controls="basic-navbar-nav"><NavLink key={1} to="/product" className="nav-link">PRODUCT PAGE</NavLink></Navbar.Toggle>
                             <Nav.Link>Live Market</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
