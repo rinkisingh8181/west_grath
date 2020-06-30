@@ -24,11 +24,12 @@
         padding-bottom: 19px;
       }
       h4 {
-        font-family: Josefin Sans;
-        font-weight: bold;
+        font-family: FuturaBT-Heavy;
+        font-weight: 900;
         font-size: 16px;
         line-height: 16px;
         color: #B6A576;
+        letter-spacing: 1.92px;
       }
     }
     .content {
@@ -52,12 +53,13 @@
               margin-top: 0;
             }
             label {
-              font-family: Josefin Sans;
+              font-family: FuturaBT-Heavy;
               font-weight: 600;
               font-size: 14px;
               line-height: 14px;
               color: #000000;
               margin-bottom: 8px;
+              letter-spacing: 0.28px;
             }
             span {
               font-family: Josefin Sans;
@@ -65,6 +67,7 @@
               font-size: 18px;
               line-height: 18px;
               color: #000000;
+              letter-spacing: 0.36px;
             }
             p {
               font-family: Josefin Sans;
@@ -73,6 +76,7 @@
               line-height: 18px;
               color: #000000;
               max-width: 195px;
+              letter-spacing: 0.36px;
             }
           }
         }
@@ -82,12 +86,13 @@
       border-top: 1px solid #d7d7d7;
       padding: 14px 0;
       .edit-btn {
-        font-family: Josefin Sans;
-        font-weight: bold;
+        font-family: FuturaBT-Heavy;
+        font-weight: 900;
         font-size: 14px;
         line-height: 14px;
         color: #b6a576;
         padding: 0;
+        letter-spacing: 0.7px;
         &:focus {
           outline: none;
           box-shadow: none;

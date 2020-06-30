@@ -4,13 +4,14 @@
   user-select: none;
   width: 100%;
   label {
-    font-family: Josefin Sans;
+    font-family: FuturaBT-Heavy;
     font-weight: normal;
     font-size: 15px;
     line-height: 15px;
     color: #000000;
     margin-bottom: 0;
     margin-right: 10px;
+    letter-spacing: 0.3px;
   }
   .custom-selectDrop {
     position: relative;
@@ -26,7 +27,7 @@
       align-items: center;
       justify-content: space-between;
       padding: 8px 12px 7px;
-      font-family: Josefin Sans;
+      font-family: FuturaBT-Heavy;
       font-weight: normal;
       font-size: 14px;
       line-height: 14px;
@@ -123,13 +124,14 @@
         }
         .wine-colloection-title {
           h4 {
-            font-family: Josefin Sans;
-            font-weight: 600;
+            font-family: FuturaBT-Book;
+            font-weight: 900;
             font-size: 16px;
             line-height: 16px;
             text-transform: uppercase;
             color: #B6A576;
             margin-bottom: 0;
+            letter-spacing: 1.92px;
             @media screen and (max-width: 991px){
               font-size: 24px;
               line-height: 24px;
@@ -224,17 +226,17 @@
         .table {
           margin-bottom: 0;
           th {
-            font-family: Josefin Sans;
+            font-family: FuturaBT-Heavy;
             font-weight: normal;
             font-size: 13px;
             line-height: 14px;
-            font-weight: 600;
             color: #000000;
             text-transform: capitalize;
             padding: 15px 6px 12px;
             border-top: 1px solid #e7e7e7;
             border-bottom: 1px solid #e7e7e7;
             vertical-align: middle;
+            letter-spacing: 0.26px;
             &.status-th {
               text-align: center;
             }
@@ -281,7 +283,7 @@
             }
           }
           td {
-            font-family: Josefin Sans;
+            font-family: FuturaBT-Heavy;
             font-style: normal;
             font-weight: normal;
             font-size: 14px;
@@ -321,20 +323,20 @@
                   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25);
                   border-radius: 6px;
                   padding: 6px 20px;
-                  font-family: Roboto;
+                  font-family: FuturaBT-Book;
                   font-weight: normal;
-                  font-size: 12px;
+                  font-size: 14px;
                   line-height: 14px;
-                  color: #32E206;
+                  color: #3fb34f;
                 }
               }
               &.sold-td {
                 span {
-                  font-family: Roboto;
-                  font-weight: 600;
-                  font-size: 12px;
+                  font-family: FuturaBT-Book;
+                  font-weight: 900;
+                  font-size: 14px;
                   line-height: 14px;
-                  color: #FF0101;
+                  color: #b72026;
                 }
               }
             }
@@ -345,11 +347,12 @@
         padding: 10px 0 5px;
         .wine-table-footer-prev {
           .wine-table-prev-next-btn {
-            font-family: Josefin Sans;
-            font-weight: 600;
+            font-family: FuturaBT-Book;
+            font-weight: 900;
             font-size: 14px;
             line-height: 14px;
             color: #b6a576;
+            letter-spacing: 0.7px;
             text-transform: uppercase;
             &:hover {
               text-decoration: none;
@@ -364,12 +367,13 @@
           li {
             list-style: none;
             .wine-table-no-btn {
-              font-family: Josefin Sans;
-              font-weight: 600;
+              font-family: FuturaBT-Book;
+              font-weight: 900;
               font-size: 14px;
               line-height: 14px;
               color: #b6a576;
               padding: 6px;
+              letter-spacing: 0.7px;
               &:hover {
                 text-decoration: none;
                 color: #6E6D69;
@@ -379,12 +383,13 @@
         }
         .wine-table-footer-next {
           .wine-table-prev-next-btn {
-            font-family: Josefin Sans;
-            font-weight: 600;
+            font-family: FuturaBT-Book;
+            font-weight: 900;
             font-size: 14px;
             line-height: 14px;
             color: #b6a576;
             text-transform: uppercase;
+            letter-spacing: 0.7px;
             &:hover {
               text-decoration: none;
               color: #6E6D69;
@@ -393,12 +398,13 @@
         }
         .win-table-export {
           .export-btn {
-            font-family: Josefin Sans;
-            font-weight: 600;
+            font-family: FuturaBT-Book;
+            font-weight: 900;
             font-size: 14px;
             line-height: 14px;
             color: #b6a576;
             padding: 0;
+            letter-spacing: 0.7px;
             &:hover {
               text-decoration: none;
               color: #6E6D69;

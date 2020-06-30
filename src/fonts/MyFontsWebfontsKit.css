@@ -1,0 +1,161 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3917192, 2020-06-22T10:02:24-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: FuturaBT-CondBold by Bitstream
+ * URL: https://www.myfonts.com/fonts/bitstream/futura/pro-condensed-bold-193053/
+ * 
+ * Webfont: FuturaBT-BookItalic by Bitstream
+ * URL: https://www.myfonts.com/fonts/bitstream/futura/pro-book-italic-193053/
+ * 
+ * Webfont: FuturaBT-BoldItalic by Bitstream
+ * URL: https://www.myfonts.com/fonts/bitstream/futura/pro-bold-italic-193053/
+ * 
+ * Webfont: FuturaBT-Book by Bitstream
+ * URL: https://www.myfonts.com/fonts/bitstream/futura/pro-book-193053/
+ * 
+ * Webfont: FuturaBT-CondBoldIt by Bitstream
+ * URL: https://www.myfonts.com/fonts/bitstream/futura/pro-condensed-bold-italic-193053/
+ * 
+ * Webfont: FuturaBT-CondExtraBlack by Bitstream
+ * URL: https://www.myfonts.com/fonts/bitstream/futura/pro-condensed-extra-black-193053/
+ * 
+ * Webfont: FuturaBT-CondExtraBlackIt by Bitstream
+ * URL: https://www.myfonts.com/fonts/bitstream/futura/pro-condensed-extra-black-italic-193053/
+ * 
+ * Webfont: FuturaBT-CondLight by Bitstream
+ * URL: https://www.myfonts.com/fonts/bitstream/futura/pro-condensed-light-193053/
+ * 
+ * Webfont: FuturaBT-CondMediumIt by Bitstream
+ * URL: https://www.myfonts.com/fonts/bitstream/futura/pro-condensed-medium-italic-193053/
+ * 
+ * Webfont: FuturaBT-ExtraBlack by Bitstream
+ * URL: https://www.myfonts.com/fonts/bitstream/futura/pro-extra-black-193053/
+ * 
+ * Webfont: FuturaBT-CondMedium by Bitstream
+ * URL: https://www.myfonts.com/fonts/bitstream/futura/pro-condensed-medium-193053/
+ * 
+ * Webfont: FuturaBT-CondLightIt by Bitstream
+ * URL: https://www.myfonts.com/fonts/bitstream/futura/pro-condensed-light-italic-193053/
+ * 
+ * Webfont: FuturaBT-ExtraBlackItalic by Bitstream
+ * URL: https://www.myfonts.com/fonts/bitstream/futura/pro-extra-black-italic-193053/
+ * 
+ * Webfont: FuturaBT-Light by Bitstream
+ * URL: https://www.myfonts.com/fonts/bitstream/futura/pro-light-193053/
+ * 
+ * Webfont: FuturaBT-LightItalic by Bitstream
+ * URL: https://www.myfonts.com/fonts/bitstream/futura/pro-light-italic-193053/
+ * 
+ * Webfont: FuturaBT-Heavy by Bitstream
+ * URL: https://www.myfonts.com/fonts/bitstream/futura/pro-heavy-193053/
+ * 
+ * Webfont: FuturaBT-HeavyItalic by Bitstream
+ * URL: https://www.myfonts.com/fonts/bitstream/futura/pro-heavy-italic-193053/
+ * 
+ * Webfont: FuturaBT-Medium by Bitstream
+ * URL: https://www.myfonts.com/fonts/bitstream/futura/pro-medium-193053/
+ * 
+ * Webfont: FuturaBT-MediumItalic by Bitstream
+ * URL: https://www.myfonts.com/fonts/bitstream/futura/pro-medium-italic-193053/
+ * 
+ * Webfont: FuturaBT-Bold by Bitstream
+ * URL: https://www.myfonts.com/fonts/bitstream/futura/pro-bold-193053/
+ * 
+ * 
+ * Webfonts copyright: Copyright &amp;#x00A9; 2017 Monotype Imaging Inc. All rights reserved.
+ * 
+ * © 2020 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/3bc588");
+  
+@font-face {
+  font-family: 'FuturaBT-BoldItalic';
+  src: url('webFonts/FuturaBT-BoldItalic/font.woff2') format('woff2'), url('webFonts/FuturaBT-BoldItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'FuturaBT-BookItalic';
+  src: url('webFonts/FuturaBT-BookItalic/font.woff2') format('woff2'), url('webFonts/FuturaBT-BookItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'FuturaBT-Book';
+  src: url('webFonts/FuturaBT-Book/font.woff2') format('woff2'), url('webFonts/FuturaBT-Book/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'FuturaBT-Bold';
+  src: url('webFonts/FuturaBT-Bold/font.woff2') format('woff2'), url('webFonts/FuturaBT-Bold/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'FuturaBT-MediumItalic';
+  src: url('webFonts/FuturaBT-MediumItalic/font.woff2') format('woff2'), url('webFonts/FuturaBT-MediumItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'FuturaBT-Medium';
+  src: url('webFonts/FuturaBT-Medium/font.woff2') format('woff2'), url('webFonts/FuturaBT-Medium/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'FuturaBT-LightItalic';
+  src: url('webFonts/FuturaBT-LightItalic/font.woff2') format('woff2'), url('webFonts/FuturaBT-LightItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'FuturaBT-Heavy';
+  src: url('webFonts/FuturaBT-Heavy/font.woff2') format('woff2'), url('webFonts/FuturaBT-Heavy/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'FuturaBT-Light';
+  src: url('webFonts/FuturaBT-Light/font.woff2') format('woff2'), url('webFonts/FuturaBT-Light/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'FuturaBT-CondBold';
+  src: url('webFonts/FuturaBT-CondBold/font.woff2') format('woff2'), url('webFonts/FuturaBT-CondBold/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'FuturaBT-CondBoldIt';
+  src: url('webFonts/FuturaBT-CondBoldIt/font.woff2') format('woff2'), url('webFonts/FuturaBT-CondBoldIt/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'FuturaBT-HeavyItalic';
+  src: url('webFonts/FuturaBT-HeavyItalic/font.woff2') format('woff2'), url('webFonts/FuturaBT-HeavyItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'FuturaBT-ExtraBlack';
+  src: url('webFonts/FuturaBT-ExtraBlack/font.woff2') format('woff2'), url('webFonts/FuturaBT-ExtraBlack/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'FuturaBT-CondLightIt';
+  src: url('webFonts/FuturaBT-CondLightIt/font.woff2') format('woff2'), url('webFonts/FuturaBT-CondLightIt/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'FuturaBT-ExtraBlackItalic';
+  src: url('webFonts/FuturaBT-ExtraBlackItalic/font.woff2') format('woff2'), url('webFonts/FuturaBT-ExtraBlackItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'FuturaBT-CondExtraBlack';
+  src: url('webFonts/FuturaBT-CondExtraBlack/font.woff2') format('woff2'), url('webFonts/FuturaBT-CondExtraBlack/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'FuturaBT-CondExtraBlackIt';
+  src: url('webFonts/FuturaBT-CondExtraBlackIt/font.woff2') format('woff2'), url('webFonts/FuturaBT-CondExtraBlackIt/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'FuturaBT-CondMediumIt';
+  src: url('webFonts/FuturaBT-CondMediumIt/font.woff2') format('woff2'), url('webFonts/FuturaBT-CondMediumIt/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'FuturaBT-CondLight';
+  src: url('webFonts/FuturaBT-CondLight/font.woff2') format('woff2'), url('webFonts/FuturaBT-CondLight/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'FuturaBT-CondMedium';
+  src: url('webFonts/FuturaBT-CondMedium/font.woff2') format('woff2'), url('webFonts/FuturaBT-CondMedium/font.woff') format('woff');
+}
+
