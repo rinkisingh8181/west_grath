@@ -11,7 +11,7 @@ const Invoice = () => {
               <div className="invoice-block">
                   <div className="invoice-card">
                       <div className="title">
-                          <h4 className="text-uppercase mb-0">Invoice</h4>
+                          <h4 className="text-uppercase mb-0">Invoices</h4>
                       </div>
                       <div className="invoice-table">
                           <Table responsive>
@@ -19,11 +19,10 @@ const Invoice = () => {
                                   <tr>
                                       <th width="16%">PURCHASE DATE</th>
                                       <th width="10%">INVOICE</th>
-                                      <th width="31%">wine</th>
+                                      <th width="43%">wine</th>
                                       <th width="5%">Year</th>
-                                      <th width="5%">Size</th>
+                                      <th width="5%">BOTTLES</th>
                                       <th width="16%">PURCHASE PRICE</th>
-                                      <th width="22%">DOWNLOAD INVOICE</th>
                                   </tr>
                               </thead>
                               <tbody>
@@ -36,7 +35,6 @@ const Invoice = () => {
                                       <td>2016</td>
                                       <td>3x75</td>
                                       <td>47,010</td>
-                                      <td><span className="d-block text-center receipt-link">PDF</span></td>
                                   </tr>
                                   <tr>
                                       <td>13/02/2020</td>
@@ -47,7 +45,6 @@ const Invoice = () => {
                                       <td>2016</td>
                                       <td>3x75</td>
                                       <td>47,010</td>
-                                      <td><span className="d-block text-center receipt-link">PDF</span></td>
                                   </tr>
                                   <tr>
                                       <td>13/02/2020</td>
@@ -58,7 +55,6 @@ const Invoice = () => {
                                       <td>2016</td>
                                       <td>3x75</td>
                                       <td>47,010</td>
-                                      <td><span className="d-block text-center receipt-link">PDF</span></td>
                                   </tr>
                                   <tr>
                                       <td>DD/MM/YYYY</td>
@@ -69,7 +65,6 @@ const Invoice = () => {
                                       <td>2016</td>
                                       <td>3x75</td>
                                       <td>47,010</td>
-                                      <td><span className="d-block text-center receipt-link">PDF</span></td>
                                   </tr>
                                   <tr>
                                       <td>DD/MM/YYYY</td>
@@ -80,7 +75,6 @@ const Invoice = () => {
                                       <td>2016</td>
                                       <td>3x75</td>
                                       <td>47,010</td>
-                                      <td><span className="d-block text-center receipt-link">PDF</span></td>
                                   </tr>
                               </tbody>
                           </Table>
@@ -272,7 +266,7 @@ const Invoice = () => {
                       </div>
                       <div className="invoice-footer d-flex justify-content-center justify-content-md-end">
                           <div className="invoice-xls-view">
-                              <Button className="invoice-xls-view-btn mx-2" variant="link">Download XLS</Button>
+                              <Button className="invoice-xls-view-btn mr-3" variant="link">Download XLS</Button>
                               <Button className="invoice-xls-view-btn" variant="link">View All</Button>
                           </div>
                       </div>

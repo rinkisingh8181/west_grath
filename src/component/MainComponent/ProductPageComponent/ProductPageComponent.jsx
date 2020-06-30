@@ -238,7 +238,7 @@ const ProductPage = () => {
                                 </Table>
                             </div>
                             <div className="transaction-history-table-export d-flex justify-content-end">
-                                <Button className="table-export-btn" variant="link">Export PDF</Button>
+                                <Button className="table-export-btn mr-3" variant="link">Export PDF</Button>
                                 <Button className="table-export-btn" variant="link">Export XLS</Button>
                             </div>
                         </div>

@@ -101,7 +101,7 @@
 
 
 .wine-colloection-section {
-  margin: 30px;
+  margin: 15px 0;
   @media screen and (max-width: 767px){
     margin: 0 0 20px;
   }
@@ -124,7 +124,7 @@
         .wine-colloection-title {
           h4 {
             font-family: Josefin Sans;
-            font-weight: normal;
+            font-weight: 600;
             font-size: 16px;
             line-height: 16px;
             text-transform: uppercase;
@@ -231,7 +231,7 @@
             font-weight: 600;
             color: #000000;
             text-transform: capitalize;
-            padding: 15px 22px 12px;
+            padding: 15px 6px 12px;
             border-top: 1px solid #e7e7e7;
             border-bottom: 1px solid #e7e7e7;
             vertical-align: middle;
@@ -253,7 +253,7 @@
               width: 20px;
               display: inline-block;
               vertical-align: middle;
-              margin-left: 10px;
+              margin-left: 6px;
               .sort-up {
                 display: block;
                 width: 0;
@@ -287,7 +287,7 @@
             font-size: 14px;
             line-height: 14px;
             color: #6C6B6B;
-            padding: 16px 22px;
+            padding: 16px 10px;
             border-bottom: 1px solid #e7e7e7;
             vertical-align: middle;
             &:first-child {
@@ -307,7 +307,7 @@
                 span {
                   font-family: Roboto;
                   font-style: normal;
-                  font-weight: 500;
+                  font-weight: 600;
                   font-size: 12px;
                   line-height: 14px;
                   color: #32E206;
@@ -331,7 +331,7 @@
               &.sold-td {
                 span {
                   font-family: Roboto;
-                  font-weight: 500;
+                  font-weight: 600;
                   font-size: 12px;
                   line-height: 14px;
                   color: #FF0101;
@@ -342,14 +342,15 @@
         }
       }
       .wine-table-footer {
-        padding: 26px 0 23px;
+        padding: 10px 0 5px;
         .wine-table-footer-prev {
           .wine-table-prev-next-btn {
             font-family: Josefin Sans;
-            font-weight: normal;
+            font-weight: 600;
             font-size: 14px;
             line-height: 14px;
-            color: #B16D06;
+            color: #b6a576;
+            text-transform: uppercase;
             &:hover {
               text-decoration: none;
               color: #6E6D69;
@@ -364,10 +365,11 @@
             list-style: none;
             .wine-table-no-btn {
               font-family: Josefin Sans;
-              font-weight: normal;
+              font-weight: 600;
               font-size: 14px;
               line-height: 14px;
-              color: #B16D06;
+              color: #b6a576;
+              padding: 6px;
               &:hover {
                 text-decoration: none;
                 color: #6E6D69;
@@ -378,10 +380,11 @@
         .wine-table-footer-next {
           .wine-table-prev-next-btn {
             font-family: Josefin Sans;
-            font-weight: normal;
+            font-weight: 600;
             font-size: 14px;
             line-height: 14px;
-            color: #B16D06;
+            color: #b6a576;
+            text-transform: uppercase;
             &:hover {
               text-decoration: none;
               color: #6E6D69;
@@ -391,10 +394,11 @@
         .win-table-export {
           .export-btn {
             font-family: Josefin Sans;
-            font-weight: normal;
+            font-weight: 600;
             font-size: 14px;
             line-height: 14px;
-            color: #B16D06;
+            color: #b6a576;
+            padding: 0;
             &:hover {
               text-decoration: none;
               color: #6E6D69;

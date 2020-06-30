@@ -385,6 +385,11 @@
           color: #b6a576;
           font-size: 14px;
           font-weight: bold;
+          padding:0;
+          &:hover {
+            text-decoration: none;
+            color: #6E6D69;
+          }
         }
       }
     }

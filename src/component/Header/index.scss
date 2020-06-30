@@ -74,7 +74,7 @@
       }
       .navbar-nav {
         width: 100%;
-        justify-content: space-around;
+        justify-content: center;
         @media screen and (max-width: 991px){
           background-color: #ffffff;
           padding-left: 16px;
@@ -87,11 +87,11 @@
         .nav-link {
           font-family: Josefin Sans;
           font-weight: bold;
-          font-size: 18px;
-          line-height: 18px;
+          font-size: 16px;
+          line-height: 16px;
           text-transform: uppercase;
           color: #6E6D69;
-          padding: 16px 12px;
+          padding: 16px 24px;
           @media screen and (min-width: 992px) and (max-width: 1199px){
             font-size: 16px;
             padding: 16px 6px;

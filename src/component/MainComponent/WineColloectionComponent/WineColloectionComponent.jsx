@@ -43,13 +43,13 @@ const data = [
 ];
 
 const columns = [
-    {name: 'uid', label: 'UID', style: {width: 138}, sort: 0},
-    {name: 'wine', label: 'Wine / Vintage / Unit', style: {width: 228}, sort: 0},
-    {name: 'status', label: 'Status', style: {width: 148}, sort: 0},
-    {name: 'cost', label: 'Cost / Bottle', style: {width: 148}, sort: 0},
+    {name: 'uid', label: 'UID', style: {width: 125}, sort: 0},
+    {name: 'wine', label: 'Wine / Vintage / Unit', style: {width: 225}, sort: 0},
+    {name: 'status', label: 'Status', style: {width: 130}, sort: 0},
+    {name: 'cost', label: 'Cost / Bottle', style: {width: 150}, sort: 0},
     {name: 'marketPrice', label: 'Market Price', style: {width: 148}, sort: 0},
-    {name: 'transactionPrice', label: 'Transaction Price', style: {width: 148}, sort: 0},
-    {name: 'transactionDate', label: 'Transaction Date', style: {width: 148}, sort: 0}
+    {name: 'transactionPrice', label: 'Transaction Price', style: {width: 180}, sort: 0},
+    {name: 'transactionDate', label: 'Transaction Date', style: {width: 180}, sort: 0}
 ];
 
 const WineColloection = () => {
@@ -189,9 +189,9 @@ const WineColloection = () => {
                         <div className="wine-table-footer d-flex flex-column flex-md-row justify-content-around justify-content-md-center">
                             <div className="d-flex justify-content-center flex-fill">
                                 <div className="wine-table-footer-prev">
-                                    <Button className="wine-table-prev-next-btn" variant="link">{'< Prev 10'}</Button>
+                                    <Button className="wine-table-prev-next-btn" variant="link">{'Prev 10'}</Button>
                                 </div>
-                                <div className="wine-table-footer-no mx-4">
+                                <div className="wine-table-footer-no mx-3">
                                     <ul className="p-0 m-0 d-flex">
                                         <li>
                                             <Button className="wine-table-no-btn" variant="link">1</Button>
@@ -214,11 +214,11 @@ const WineColloection = () => {
                                     </ul>
                                 </div>
                                 <div className="wine-table-footer-next">
-                                    <Button className="wine-table-prev-next-btn" variant="link">Next 10 ></Button>
+                                    <Button className="wine-table-prev-next-btn" variant="link">Next 10</Button>
                                 </div>
                             </div>
                             <div className="win-table-export text-right">
-                                <Button className="export-btn" variant="link">Export PDF</Button>
+                                <Button className="export-btn mr-4" variant="link">Export PDF</Button>
                                 <Button className="export-btn" variant="link">Export CSV</Button>
                             </div>
                         </div>

@@ -18,7 +18,7 @@
       height: auto;
     }
     .title {
-      padding: 0 0 26px;
+      padding: 0 0 22px;
       border-bottom: 1px solid #d7d7d7;
       @media screen and (max-width: 767px){
         padding-bottom: 19px;
@@ -61,14 +61,14 @@
             }
             span {
               font-family: Josefin Sans;
-              font-weight: 300;
+              font-weight: 500;
               font-size: 18px;
               line-height: 18px;
               color: #000000;
             }
             p {
               font-family: Josefin Sans;
-              font-weight: 300;
+              font-weight: 500;
               font-size: 18px;
               line-height: 18px;
               color: #000000;
@@ -87,6 +87,7 @@
         font-size: 14px;
         line-height: 14px;
         color: #b6a576;
+        padding: 0;
         &:focus {
           outline: none;
           box-shadow: none;
