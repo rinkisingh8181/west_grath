@@ -3,13 +3,15 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
-import EditContactInformation from '../Modal/EditContactInformationComponent';
-import ChangeAddress from '../Modal/ChangeAddressComponent';
+import EditContactInformation from '../../Modal/EditContactInformationComponent';
+import ChangeAddress from '../../Modal/ChangeAddressComponent';
 import './index.scss';
 
-const AccountStorage = () => {
+const AccountStorage = ({ user: { name, email, phone, address_line1, address_line2, city, zip, country } }) => {
     const [EditContactInformationShow, setEditContactInformationShow] = React.useState(false);
     const [ChangeAddressShow, setChangeAddressShow] = React.useState(false);
+    const reversedZip = zip ? zip.split(' ').length > 1 ? zip.split(' ').reverse().join(' ') : zip : '';
+    const address = address_line1 ? `${address_line1} ${address_line2} ${city}, ${reversedZip} ${country}` : ''
 
     return (
         <div className="account-storage-info">
@@ -25,15 +27,15 @@ const AccountStorage = () => {
                                     <div className="content-info">
                                         <div className="content-info-list d-flex flex-column">
                                             <label className="text-uppercase">Name:</label>
-                                            <span>John Smith</span>
+                                            <span>{name}</span>
                                         </div>
                                         <div className="content-info-list d-flex flex-column">
                                             <label className="text-uppercase">Email:</label>
-                                            <span>johnsmith@gmail.com</span>
+                                            <span>{email}</span>
                                         </div>
                                         <div className="content-info-list d-flex flex-column">
                                             <label className="text-uppercase">PHONE:</label>
-                                            <span>+1 310 555-1234</span>
+                                            <span>{phone}</span>
                                         </div>
                                     </div>
                                 </div>
@@ -53,13 +55,13 @@ const AccountStorage = () => {
                                     <div className="content-info pr-3">
                                         <div className="content-info-list d-flex flex-column">
                                             <label className="text-uppercase">BILLING ADDRESS:</label>
-                                            <p>123456 Elm Street Suite 204 Los Angeles, CA 90045 USA</p>
+                                            <p>{address}</p>
                                         </div>
                                     </div>
                                     <div className="content-info">
                                         <div className="content-info-list d-flex flex-column">
                                             <label className="text-uppercase">SHIPPING ADDRESS:</label>
-                                            <p>123456 Elm Street Suite 204 Los Angeles, CA 90045 USA</p>
+                                            <p>{address}</p>
                                         </div>
                                     </div>
                                 </div>

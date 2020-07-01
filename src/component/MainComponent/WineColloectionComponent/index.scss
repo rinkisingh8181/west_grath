@@ -4,7 +4,7 @@
   user-select: none;
   width: 100%;
   label {
-    font-family: FuturaBT-Heavy;
+    font-family: 'FuturaBT-Medium';
     font-weight: normal;
     font-size: 15px;
     line-height: 15px;
@@ -124,8 +124,7 @@
         }
         .wine-colloection-title {
           h4 {
-            font-family: FuturaBT-Book;
-            font-weight: 900;
+            font-family: 'FuturaBT-Bold';
             font-size: 16px;
             line-height: 16px;
             text-transform: uppercase;
@@ -250,6 +249,7 @@
               display: flex;
               align-items: center;
               cursor: pointer;
+              font-family: 'FuturaBT-Medium';
             }
             .table-sort {
               width: 20px;
@@ -283,7 +283,7 @@
             }
           }
           td {
-            font-family: FuturaBT-Heavy;
+            font-family: 'FuturaBT-Light';
             font-style: normal;
             font-weight: normal;
             font-size: 14px;
@@ -302,12 +302,13 @@
               .wine-name {
                 color: #B6A576;
                 text-decoration: underline;
+                font-family: 'FuturaBT-Light';
               }
             }
             .status-list {
               &.live-offer {
                 span {
-                  font-family: Roboto;
+                  font-family: 'FuturaBT-Heavy';
                   font-style: normal;
                   font-weight: 600;
                   font-size: 12px;
@@ -347,8 +348,7 @@
         padding: 10px 0 5px;
         .wine-table-footer-prev {
           .wine-table-prev-next-btn {
-            font-family: FuturaBT-Book;
-            font-weight: 900;
+            font-family: 'FuturaBT-Bold';
             font-size: 14px;
             line-height: 14px;
             color: #b6a576;
@@ -367,8 +367,7 @@
           li {
             list-style: none;
             .wine-table-no-btn {
-              font-family: FuturaBT-Book;
-              font-weight: 900;
+              font-family: 'FuturaBT-Bold';
               font-size: 14px;
               line-height: 14px;
               color: #b6a576;
@@ -398,7 +397,7 @@
         }
         .win-table-export {
           .export-btn {
-            font-family: FuturaBT-Book;
+            font-family: 'FuturaBT-Bold';
             font-weight: 900;
             font-size: 14px;
             line-height: 14px;

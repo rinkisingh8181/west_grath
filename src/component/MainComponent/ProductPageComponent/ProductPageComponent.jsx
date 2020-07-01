@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import Container from 'react-bootstrap/Container';
 import Table from 'react-bootstrap/Table';
 import Button from 'react-bootstrap/Button';
@@ -6,39 +6,51 @@ import Tabs from 'react-bootstrap/Tabs';
 import Tab from 'react-bootstrap/Tab';
 import Form from 'react-bootstrap/Form';
 import './index.scss';
+import {getSource, product as item} from '../../../api';
 import historicalChart from '../../../images/historical-chart.png';
 
 const ProductPage = () => {
-    return (
+    const [product, setProduct] = useState({})
 
+    useEffect(() => {
+        item.fetch('jJQViBKlSo9ZLo5asqU8', getSource())
+            .then(res => {
+                setProduct(res.data)
+            }).catch(err => {
+            console.log(err)
+        })
+    }, [])
+
+    return (
         <>
             <div className="product-page">
                 <Container>
                     <div className="product-item-detail d-flex flex-column flex-lg-row">
                         <div className="product-detail">
                             <div className="product-detail-head">
-                                <h4>2007 Biondi Santi, Brunello Montalcino</h4>
-                                <span>MONTALCINO, TUSCANY, ITALY</span>
-                                <span>RED</span>
+                                <h4>{product.name}</h4>
+                                <span>{product.region ? product.region.toUpperCase() : ''},{' '}
+                                    {product.country ? product.country.toUpperCase() : ''}</span>
+                                <span>{product.color ? product.color.toUpperCase() : ''}</span>
                             </div>
                             <div className="product-detail-descripton mt-3">
                                 <span>DESCRIPTION</span>
-                                <p>Clos Fourtet lorem ipsum dolor sit amet, et qui inani facilisis deterruisset, has ei regione sapientem gloriatur. Ea duo maiorum repudiandae efficiantur. Sed te wisi inciderint. Cibo solet nam cu, mei ad lorem scribentur, ea scaevola adipisci quaerendum pro. An sea dicta suscipiantur. Dolor sit amet, et qui inani facilisis deterruisset.</p>
+                                <p>{product.desc}</p>
                             </div>
                         </div>
                         <div className="product-volume-img d-flex">
                             <div className="product-volume">
                                 <div className="product-volume-list mb-4">
                                     <span>PRODUCTION VOLUME</span>
-                                    <p>Sample</p>
+                                    <p>{product.product_volume}</p>
                                 </div>
                                 <div className="product-volume-list mb-4">
                                     <span>PRODUCTION VOLUME</span>
-                                    <p>Sample</p>
+                                    <p>{product.product_volume}</p>
                                 </div>
                                 <div className="product-volume-list mb-4">
                                     <span>PRODUCTION VOLUME</span>
-                                    <p>Sample</p>
+                                    <p>{product.product_volume}</p>
                                 </div>
                             </div>
                             <div className="product-img-block pl-3 d-flex flex-column">
@@ -249,48 +261,32 @@ const ProductPage = () => {
                                 <h4 className="text-uppercase mb-0">TASTING NOTES</h4>
                             </div>
                             <div className="tasting-notes-wrapper">
-                                <div className="tasting-notes-list">
-                                    <div className="tasting-notes-title d-flex flex-wrap">
-                                        <div className="notes-title mr-4">
-                                            <span>Score:</span>
-                                            <span className="ml-2">86</span>
-                                        </div>
-                                        <div className="notes-title mr-4">
-                                            <span>Drinking Dates:</span>
-                                            <span className="ml-2">2016-2018</span>
-                                        </div>
-                                        <div className="notes-title mr-4">
-                                            <span>Critic:</span>
-                                            <span className="ml-2">Neal Martin</span>
-                                        </div>
-                                        <div className="notes-title mr-4">
-                                            <span>Tasted:</span>
-                                            <span className="ml-2">29-Jul-2016</span>
-                                        </div>
-                                    </div>
-                                    <p>Clos Fourtet lorem ipsum dolor sit amet, et qui inani facilisis deterruisset, has ei regione sapientem gloriatur. Ea duo maiorum repudiandae efficiantur. Sed te wisi inciderint. Cibo solet nam cu, mei ad lorem scribentur, ea scaevola adipisci quaerendum pro. An sea dicta suscipiantur. Dolor sit amet, et qui inani facilisis deterruisset.</p>
-                                </div>
-                                <div className="tasting-notes-list">
-                                    <div className="tasting-notes-title d-flex flex-wrap">
-                                        <div className="notes-title mr-4">
-                                            <span>Score:</span>
-                                            <span className="ml-2">86</span>
-                                        </div>
-                                        <div className="notes-title mr-4">
-                                            <span>Drinking Dates:</span>
-                                            <span className="ml-2">2016-2018</span>
-                                        </div>
-                                        <div className="notes-title mr-4">
-                                            <span>Critic:</span>
-                                            <span className="ml-2">Neal Martin</span>
-                                        </div>
-                                        <div className="notes-title mr-4">
-                                            <span>Tasted:</span>
-                                            <span className="ml-2">29-Jul-2016</span>
-                                        </div>
-                                    </div>
-                                    <p>Clos Fourtet lorem ipsum dolor sit amet, et qui inani facilisis deterruisset, has ei regione sapientem gloriatur. Ea duo maiorum repudiandae efficiantur. Sed te wisi inciderint. Cibo solet nam cu, mei ad lorem scribentur, ea scaevola adipisci quaerendum pro. An sea dicta suscipiantur. Dolor sit amet, et qui inani facilisis deterruisset.</p>
-                                </div>
+                                {
+                                    product.tasting_notes ?
+                                        product.tasting_notes.map((note, i) => (
+                                            <div className="tasting-notes-list" key={i}>
+                                                <div className="tasting-notes-title d-flex flex-wrap">
+                                                    <div className="notes-title mr-4">
+                                                        <span>Score:</span>
+                                                        <span className="ml-2">{note.score}</span>
+                                                    </div>
+                                                    <div className="notes-title mr-4">
+                                                        <span>Drinking Dates:</span>
+                                                        <span className="ml-2">{note.drink_dates}</span>
+                                                    </div>
+                                                    <div className="notes-title mr-4">
+                                                        <span>Critic:</span>
+                                                        <span className="ml-2">{note.critics}</span>
+                                                    </div>
+                                                    <div className="notes-title mr-4">
+                                                        <span>Tasted:</span>
+                                                        <span className="ml-2">{note.tasted_date}</span>
+                                                    </div>
+                                                </div>
+                                                <p>{note.review}</p>
+                                            </div>
+                                        )) : null
+                                }
                             </div>
                         </div>
                     </div>

@@ -4,50 +4,15 @@ import Table from 'react-bootstrap/Table';
 import Button from 'react-bootstrap/Button';
 import './index.scss';
 import filterIcon from './../../../images/filter-icon.png';
+import { getSource, collections } from '../../../api';
 import _ from 'lodash';
 
-const data = [
-    {
-        uid: 2,
-        wine: 'ab',
-        vintage: 1999,
-        unit: '1x15',
-        status: 'Live Offer',
-        cost: 200,
-        marketPrice: 250,
-        transactionPrice: 410,
-        transactionDate: '20-jun-2020'
-    },
-    {
-        uid: 1,
-        wine: 'Screaming Eagle, Cabernet Sauvignon',
-        vintage: 1999,
-        unit: '1x15',
-        status: 'Sell',
-        cost: 200,
-        marketPrice: 250,
-        transactionPrice: 310,
-        transactionDate: '20-jun-2020'
-    },
-    {
-        uid: 3,
-        wine: 'ab',
-        vintage: 1999,
-        unit: '1x15',
-        status: 'Sold',
-        cost: 500,
-        marketPrice: 550,
-        transactionPrice: 250,
-        transactionDate: '20-jun-2020'
-    }
-];
-
 const columns = [
-    {name: 'uid', label: 'UID', style: {width: 125}, sort: 0},
+    {name: 'uuid', label: 'UID', style: {width: 125}, sort: 0},
     {name: 'wine', label: 'Wine / Vintage / Unit', style: {width: 225}, sort: 0},
     {name: 'status', label: 'Status', style: {width: 130}, sort: 0},
     {name: 'cost', label: 'Cost / Bottle', style: {width: 150}, sort: 0},
-    {name: 'marketPrice', label: 'Market Price', style: {width: 148}, sort: 0},
+    {name: 'market_price', label: 'Market Price', style: {width: 148}, sort: 0},
     {name: 'transactionPrice', label: 'Transaction Price', style: {width: 180}, sort: 0},
     {name: 'transactionDate', label: 'Transaction Date', style: {width: 180}, sort: 0}
 ];
@@ -56,7 +21,7 @@ const WineColloection = () => {
     const [isLocationOpen, setIsLocationOpen] = React.useState(false);
     const [isViewOpen, setIsViewOpene] = React.useState(false);
     const [isFilterOpen, setIsFilterOpene] = React.useState(false);
-    const [wData, setWineData] = useState([...data]);
+    const [wData, setWineData] = useState([]);
     const [columnList, setColumnList] = useState([...columns]);
 
     const sortData = (field, order, idx) => {
@@ -65,7 +30,7 @@ const WineColloection = () => {
         if (order === 1) {
             sort = 2;
         } else if (order === 2) {
-            sort = 1;
+            sort = 0;
         }  else if (order === 0) {
             sort = 1;
         } else {
@@ -81,9 +46,15 @@ const WineColloection = () => {
         setColumnList([...col]);
     };
 
-    // useEffect(() => {
+    useEffect(() => {
+        collections.fetch('jJQViBKlSo9ZLo5asqU8', getSource())
+            .then(res => {
+                setWineData(res.data)
+            }).catch(err => {
+                console.log(err)
+        })
+    }, [])
 
-    // }, [])
     return (
         <div className="wine-colloection-section">
             <Container>
@@ -163,8 +134,8 @@ const WineColloection = () => {
                                 <tbody>
                                     {
                                         wData.map((wineData) => (
-                                            <tr key={wineData.uid}>
-                                                <td>{wineData.uid}</td>
+                                            <tr key={wineData.uuid}>
+                                                <td>{wineData.uuid}</td>
                                                 <td>
                                                     <div className="wine-list">
                                                         <span className="d-block text-nowrap wine-name">{wineData.wine}</span>
@@ -177,7 +148,7 @@ const WineColloection = () => {
                                                     </div>
                                                 </td>
                                                 <td>{wineData.cost}</td>
-                                                <td>{wineData.marketPrice}</td>
+                                                <td>{wineData.market_price}</td>
                                                 <td></td>
                                                 <td></td>
                                             </tr>

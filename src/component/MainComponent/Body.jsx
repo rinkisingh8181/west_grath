@@ -4,8 +4,7 @@ import {
     Route,
     Redirect
 } from "react-router-dom";
-import AccountStorageComponent  from "./AccountStorageComponent/AccountStorageComponent";
-import InvoiceComponent  from "./InvoiceComponent/InvoiceComponent";
+import Account from "./Account/Account";
 import WineColloection from './WineColloectionComponent/WineColloectionComponent';
 import ProductPage from './ProductPageComponent/ProductPageComponent';
 
@@ -18,8 +17,7 @@ const Home = () => {
                     <Redirect to="/account" />
                 </Route>
                 <Route path="/account">
-                    <AccountStorageComponent/>
-                    <InvoiceComponent/>
+                    <Account />
                 </Route>
                 <Route path="/wine">
                     <WineColloection/>

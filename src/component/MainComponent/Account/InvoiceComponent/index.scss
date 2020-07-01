@@ -17,7 +17,7 @@
           padding-bottom: 19px;
         }
         h4 {
-          font-family: FuturaBT-Book;
+          font-family: 'FuturaBT-Bold';
           font-weight: 900;
           font-size: 16px;
           line-height: 16px;
@@ -32,7 +32,7 @@
           margin-bottom: 0;
           tr {
             th {
-              font-family: FuturaBT-Heavy;
+              font-family: 'FuturaBT-Medium';
               font-weight: normal;
               font-size: 14px;
               line-height: 14px;
@@ -51,7 +51,7 @@
               }
             }
             td {
-              font-family: FuturaBT-Book;
+              font-family: 'FuturaBT-Light';
               font-weight: normal;
               font-size: 14px;
               line-height: 14px;
@@ -70,7 +70,7 @@
                 text-transform: uppercase;
                 text-decoration: underline;
                 cursor: pointer;
-                font-family: FuturaBT-Book;
+                font-family: 'FuturaBT-Medium';
                 font-weight: 900;
                 &:hover {
                   color: #6E6D69;
@@ -84,7 +84,7 @@
         padding-top: 24px;
         .invoice-xls-view {
           .invoice-xls-view-btn {
-            font-family: FuturaBT-Book;
+            font-family: 'FuturaBT-Medium';
             font-weight: 900;
             font-size: 14px;
             line-height: 14px;
